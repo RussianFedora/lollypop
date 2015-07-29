@@ -46,6 +46,9 @@ rm -rf $RPM_BUILD_ROOT
 %make_install
 %find_lang %{name}
 
+%check
+desktop-file-validate %{buildroot}/%{_datadir}/applications/%{name}.desktop
+
 %post
 update-desktop-database &> /dev/null || :
 touch --no-create %{_datadir}/icons/hicolor &> /dev/null || :
