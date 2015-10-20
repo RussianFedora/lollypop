@@ -1,6 +1,6 @@
 Name:          lollypop
 Version:       0.9.60
-Release:       1%{?dist}
+Release:       2%{?dist}
 Summary:       A music player for GNOME
 
 License:       GPLv3+
@@ -34,6 +34,10 @@ Lollypop is a new GNOME music playing application.
 
 %prep
 %setup -q
+
+# fix E: non-executable-script
+tail -n +2 src/database_upgrade.py > src/database_upgrade.py.new
+mv src/database_upgrade.py.new src/database_upgrade.py
 
 %build
 %configure --disable-silent-rules
@@ -77,6 +81,9 @@ fi
 %{python3_sitelib}/%{name}
 
 %changelog
+* Tue Oct 20 2015 Maxim Orlov <murmansksity@gmail.com> - 0.9-60-2
+- fix E: non-executable-script
+
 * Tue Oct 20 2015 Maxim Orlov <murmansksity@gmail.com> - 0.9-60-1
 - Update to 0.9.60
 
