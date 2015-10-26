@@ -1,6 +1,6 @@
 Name:          lollypop
-Version:       0.9.60
-Release:       2%{?dist}
+Version:       0.9.61
+Release:       1%{?dist}
 Summary:       A music player for GNOME
 
 License:       GPLv3+
@@ -81,6 +81,9 @@ fi
 %{python3_sitelib}/%{name}
 
 %changelog
+* Mon Oct 26 2015 Maxim Orlov <murmansksity@gmail.com> - 0.9.61-1
+- Update to 0.9.61
+
 * Tue Oct 20 2015 Maxim Orlov <murmansksity@gmail.com> - 0.9-60-2
 - fix E: non-executable-script
 
