@@ -1,5 +1,5 @@
 Name:          lollypop
-Version:       0.9.61
+Version:       0.9.62
 Release:       1%{?dist}
 Summary:       A music player for GNOME
 
@@ -81,6 +81,9 @@ fi
 %{python3_sitelib}/%{name}
 
 %changelog
+* Tue Oct 27 2015 Maxim Orlov <murmansksity@gmail.com> - 0.9.62-1
+- Update to 0.9.62
+
 * Mon Oct 26 2015 Maxim Orlov <murmansksity@gmail.com> - 0.9.61-1
 - Update to 0.9.61
 
