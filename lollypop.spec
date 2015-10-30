@@ -1,3 +1,6 @@
+%global gobject_introspection_version 1.35.9
+%global gtk3_version 3.12
+
 Name:          lollypop
 Version:       0.9.62
 Release:       1%{?dist}
@@ -12,18 +15,18 @@ BuildArch:     noarch
 BuildRequires: intltool
 BuildRequires: itstool
 BuildRequires: pkgconfig(gio-2.0)
-BuildRequires: pkgconfig(gobject-introspection-1.0)
-BuildRequires: pkgconfig(gtk+-3.0)
+BuildRequires: pkgconfig(gobject-introspection-1.0) >= %{gobject_introspection_version}
+BuildRequires: pkgconfig(gtk+-3.0) >= %{gtk3_version}
 BuildRequires: python3-devel
 # check
 BuildRequires: /usr/bin/appstream-util
 BuildRequires: /usr/bin/desktop-file-validate
 
 Requires:      gdk-pixbuf2
-Requires:      gobject-introspection
+Requires:      gobject-introspection >= %{gobject_introspection_version}
 Requires:      gstreamer1
 Requires:      gstreamer1-plugins-base
-Requires:      gtk3
+Requires:      gtk3 >= %{gtk3_version}
 Requires:      libnotify >= 0.7.6
 Requires:      python3-cairo
 Requires:      pango
