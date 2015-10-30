@@ -24,6 +24,7 @@ Requires:      gobject-introspection
 Requires:      gstreamer1
 Requires:      gstreamer1-plugins-base
 Requires:      gtk3
+Requires:      libnotify >= 0.7.6
 Requires:      python3-cairo
 Requires:      pango
 Requires:      python3-gobject
