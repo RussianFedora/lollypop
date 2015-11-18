@@ -32,6 +32,8 @@ Requires:      python3-cairo
 Requires:      pango
 Requires:      python3-gobject
 Requires:      python3-dbus
+# wikipedia support
+Requires:      python3-wikipedia
 
 %description
 Lollypop is a new GNOME music playing application.
