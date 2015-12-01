@@ -3,7 +3,7 @@
 
 Name:          lollypop
 Version:       0.9.70
-Release:       1%{?dist}
+Release:       2%{?dist}
 Summary:       A music player for GNOME
 
 License:       GPLv3+
@@ -32,8 +32,9 @@ Requires:      python3-cairo
 Requires:      pango
 Requires:      python3-gobject
 Requires:      python3-dbus
-# wikipedia support
+# wikipedia, last.fm support
 Requires:      python3-wikipedia
+Requires:      python3-pylast
 
 %description
 Lollypop is a new GNOME music playing application.
@@ -87,6 +88,9 @@ fi
 %{python3_sitelib}/%{name}
 
 %changelog
+* Tue Dec 01 2015 Maxim Orlov <murmansksity@gmail.com> - 0.9.70-2
+- Added R: python3-pylast
+
 * Fri Nov 27 2015 Maxim Orlov <murmansksity@gmail.com> - 0.9.70-1
 - Update to 0.9.70
 
