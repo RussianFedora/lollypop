@@ -2,7 +2,7 @@
 %global gtk3_version 3.12
 
 Name:          lollypop
-Version:       0.9.75
+Version:       0.9.76
 Release:       1%{?dist}
 Summary:       A music player for GNOME
 
@@ -28,8 +28,8 @@ Requires:      gstreamer1
 Requires:      gstreamer1-plugins-base
 Requires:      gtk3 >= %{gtk3_version}
 Requires:      libnotify >= 0.7.6
-Requires:      python3-cairo
 Requires:      pango
+Requires:      python3-cairo
 Requires:      python3-gobject
 Requires:      python3-dbus
 # wikipedia, last.fm support
@@ -84,6 +84,9 @@ fi
 %{python3_sitelib}/%{name}
 
 %changelog
+* Mon Jan 11 2016 Maxim Orlov <murmansksity@gmail.com> - 0.9.76-1
+- Update to 0.9.76
+
 * Mon Dec 07 2015 Maxim Orlov <murmansksity@gmail.com> - 0.9.75-1
 - Update to 0.9.75
 
