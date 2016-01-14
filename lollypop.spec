@@ -2,7 +2,7 @@
 %global gtk3_version 3.12
 
 Name:          lollypop
-Version:       0.9.76
+Version:       0.9.77
 Release:       1%{?dist}
 Summary:       A music player for GNOME
 
@@ -43,8 +43,8 @@ Lollypop is a new GNOME music playing application.
 %setup -q
 
 %build
-%configure --disable-silent-rules
-%make_build
+%configure
+%make_build V=1
 
 %install
 %make_install
@@ -84,6 +84,9 @@ fi
 %{python3_sitelib}/%{name}
 
 %changelog
+* Thu Jan 14 2016 Maxim Orlov <murmansksity@gmail.com> - 0.9.77-1
+- Update to 0.9.77
+
 * Mon Jan 11 2016 Maxim Orlov <murmansksity@gmail.com> - 0.9.76-1
 - Update to 0.9.76
 
