@@ -40,7 +40,7 @@ Requires:      python3-pylast >= 1.4.2
 Lollypop is a new GNOME music playing application.
 
 %prep
-%setup -q
+%autosetup
 
 %build
 %configure
