@@ -1,8 +1,8 @@
 %global gobject_introspection_version 1.35.9
-%global gtk3_version 3.12
+%global gtk3_version 3.14
 
 Name:          lollypop
-Version:       0.9.87
+Version:       0.9.90
 Release:       1%{?dist}
 Summary:       A music player for GNOME
 
@@ -28,6 +28,7 @@ Requires:      gstreamer1
 Requires:      gstreamer1-plugins-base
 Requires:      gtk3 >= %{gtk3_version}
 Requires:      libnotify >= 0.7.6
+Requires:      totem-pl-parser
 Requires:      pango
 Requires:      python3-cairo
 Requires:      python3-gobject
@@ -84,6 +85,11 @@ fi
 %{python3_sitelib}/%{name}
 
 %changelog
+* Mon Mar 21 2016 Maxim Orlov <murmansksity@gmail.com> - 0.9.90-1
+- Update to 0.9.90
+- Update gtk3 dep version
+- Added R: totem-pl-parser
+
 * Wed Feb 17 2016 Maxim Orlov <murmansksity@gmail.com> - 0.9.87-1
 - Update to 0.9.87
 
