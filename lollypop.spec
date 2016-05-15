@@ -50,7 +50,7 @@ Lollypop is a new GNOME music playing application.
 %install
 %make_install
 
-%find_lang %{name} --with-gnome
+%find_lang %{name}
 
 %check
 appstream-util validate-relax --nonet %{buildroot}%{_datadir}/appdata/%{name}.appdata.xml
@@ -80,6 +80,7 @@ fi
 %{_datadir}/appdata/%{name}.appdata.xml
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/glib-2.0/schemas/*.gschema.xml
+%{_datadir}/help/*/%{name}
 %{_datadir}/icons/hicolor/*/apps/%{name}.png
 %{_datadir}/icons/hicolor/*/apps/%{name}-symbolic.svg
 %{python3_sitelib}/%{name}/*.py
