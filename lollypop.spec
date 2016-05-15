@@ -82,7 +82,8 @@ fi
 %{_datadir}/glib-2.0/schemas/*.gschema.xml
 %{_datadir}/icons/hicolor/*/apps/%{name}.png
 %{_datadir}/icons/hicolor/*/apps/%{name}-symbolic.svg
-%{python3_sitelib}/%{name}
+%{python3_sitelib}/%{name}/*.py
+%{python3_sitelib}/%{name}/__pycache__/*
 
 %changelog
 * Fri May 13 2016 Maxim Orlov <murmansksity@gmail.com> - 0.9.106-1
