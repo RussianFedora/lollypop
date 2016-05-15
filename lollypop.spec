@@ -83,8 +83,7 @@ fi
 %{_datadir}/help/*/%{name}
 %{_datadir}/icons/hicolor/*/apps/%{name}.png
 %{_datadir}/icons/hicolor/*/apps/%{name}-symbolic.svg
-%{python3_sitelib}/%{name}/*.py
-%{python3_sitelib}/%{name}/__pycache__/*
+%{python3_sitelib}/%{name}
 
 %changelog
 * Fri May 13 2016 Maxim Orlov <murmansksity@gmail.com> - 0.9.106-1
