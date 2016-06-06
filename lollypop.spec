@@ -2,7 +2,7 @@
 %global gtk3_version 3.14
 
 Name:           lollypop
-Version:        0.9.108
+Version:        0.9.107
 Release:        1%{?dist}
 Summary:        A music player for GNOME
 
