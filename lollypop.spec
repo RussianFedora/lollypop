@@ -1,42 +1,40 @@
 %global gobject_introspection_version 1.35.9
 %global gtk3_version 3.14
 
-Name:          lollypop
-Version:       0.9.107
-Release:       1%{?dist}
-Summary:       A music player for GNOME
+Name:           lollypop
+Version:        0.9.108
+Release:        1%{?dist}
+Summary:        A music player for GNOME
 
-License:       GPLv3+
-URL:           http://gnumdk.github.io/lollypop-web/
-Source0:       https://github.com/gnumdk/%{name}/releases/download/%{version}/%{name}-%{version}.tar.xz
+License:        GPLv3+
+URL:            http://gnumdk.github.io/lollypop-web/
+Source0:        https://github.com/gnumdk/%{name}/releases/download/%{version}/%{name}-%{version}.tar.xz
 
-BuildArch:     noarch
+BuildArch:      noarch
 
-BuildRequires: intltool
-BuildRequires: itstool
-BuildRequires: pkgconfig(gio-2.0)
-BuildRequires: pkgconfig(gobject-introspection-1.0) >= %{gobject_introspection_version}
-BuildRequires: pkgconfig(gtk+-3.0) >= %{gtk3_version}
-BuildRequires: python3-devel
-# check
-BuildRequires: /usr/bin/appstream-util
-BuildRequires: /usr/bin/desktop-file-validate
+BuildRequires:  desktop-file-utils
+BuildRequires:  pkgconfig(gio-2.0)
+BuildRequires:  pkgconfig(gobject-introspection-1.0) >= %{gobject_introspection_version}
+BuildRequires:  pkgconfig(gtk+-3.0) >= %{gtk3_version}
+BuildRequires:  intltool >= 0.26
+BuildRequires:  itstool
+BuildRequires:  libappstream-glib
+BuildRequires:  python3-devel
 
-Requires:      gdk-pixbuf2
-Requires:      gobject-introspection >= %{gobject_introspection_version}
-Requires:      gstreamer1
-Requires:      gstreamer1-plugins-base
-Requires:      gtk3 >= %{gtk3_version}
-#Requires:      kid3-common
-Requires:      libnotify >= 0.7.6
-Requires:      totem-pl-parser
-Requires:      pango
-Requires:      python3-cairo
-Requires:      python3-gobject
-Requires:      python3-dbus
-# wikipedia, last.fm support
-Requires:      python3-wikipedia >= 1.4.0
-Requires:      python3-pylast >= 1.4.2
+Requires:       gdk-pixbuf2
+Requires:       gobject-introspection >= %{gobject_introspection_version}
+Requires:       gstreamer1
+Requires:       gstreamer1-plugins-base
+Requires:       gtk3 >= %{gtk3_version}
+#Requires:       kid3-common
+Requires:       libnotify >= 0.7.6
+Requires:       pango
+Requires:       python3-cairo
+Requires:       python3-dbus
+Requires:       python3-gobject
+Requires:       python3-pylast >= 1.4.2
+Requires:       python3-wikipedia >= 1.4.0
+Requires:       totem-pl-parser
 
 %description
 Lollypop is a new GNOME music playing application.
