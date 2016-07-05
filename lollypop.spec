@@ -2,7 +2,7 @@
 %global gtk3_version 3.14
 
 Name:           lollypop
-Version:        0.9.110
+Version:        0.9.111
 Release:        1%{?dist}
 Summary:        A music player for GNOME
 
@@ -26,6 +26,7 @@ Requires:       gobject-introspection >= %{gobject_introspection_version}
 Requires:       gstreamer1
 Requires:       gstreamer1-plugins-base
 Requires:       gtk3 >= %{gtk3_version}
+Requires:       hicolor-icon-theme
 #Requires:       kid3-common
 Requires:       libnotify >= 0.7.6
 Requires:       pango
@@ -85,6 +86,10 @@ fi
 %{python3_sitelib}/%{name}
 
 %changelog
+* Tue Jul 05 2016 Maxim Orlov <murmansksity@gmail.com> - 0.9.111-1
+- Update to 0.9.111
+- Added R: hicolor-icon-theme
+
 * Sun Jun 12 2016 Maxim Orlov <murmansksity@gmail.com> - 0.9.110-1
 - Update to 0.9.110
 
