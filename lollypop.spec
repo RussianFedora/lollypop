@@ -3,7 +3,7 @@
 
 Name:           lollypop
 Version:        0.9.206
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        A music player for GNOME
 
 License:        GPLv3+
@@ -88,6 +88,9 @@ fi
 %{python3_sitelib}/%{name}
 
 %changelog
+* Tue Oct 04 2016 Maxim Orlov <murmansksity@gmail.com> - 0.9.206-2
+- Add lollypop-cli/rhythmbox2lollypop
+
 * Tue Oct 04 2016 Maxim Orlov <murmansksity@gmail.com> - 0.9.206-1
 - Update to 0.9.206
 
