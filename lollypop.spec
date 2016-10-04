@@ -76,6 +76,8 @@ fi
 %doc AUTHORS
 %license COPYING
 %{_bindir}/%{name}
+%{_bindir}/%{name}-cli
+%{_bindir}/rhythmbox2%{name}
 %{_datadir}/%{name}
 %{_datadir}/appdata/%{name}.appdata.xml
 %{_datadir}/applications/%{name}.desktop
