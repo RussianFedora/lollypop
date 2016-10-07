@@ -2,8 +2,8 @@
 %global gtk3_version 3.14
 
 Name:           lollypop
-Version:        0.9.206
-Release:        2%{?dist}
+Version:        0.9.209
+Release:        1%{?dist}
 Summary:        A music player for GNOME
 
 License:        GPLv3+
@@ -88,6 +88,9 @@ fi
 %{python3_sitelib}/%{name}
 
 %changelog
+* Fri Oct 07 2016 Maxim Orlov <murmansksity@gmail.com> - 0.9.209-1
+- Update to 0.9.209
+
 * Tue Oct 04 2016 Maxim Orlov <murmansksity@gmail.com> - 0.9.206-2
 - Add lollypop-cli/rhythmbox2lollypop
 
