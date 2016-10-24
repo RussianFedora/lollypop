@@ -2,7 +2,7 @@
 %global gtk3_version 3.14
 
 Name:           lollypop
-Version:        0.9.212
+Version:        0.9.213
 Release:        1%{?dist}
 Summary:        A music player for GNOME
 
@@ -88,6 +88,9 @@ fi
 %{python3_sitelib}/%{name}
 
 %changelog
+* Mon Oct 24 2016 Maxim Orlov <murmansksity@gmail.com> - 0.9.213-1
+- Update to 0.9.213
+
 * Tue Oct 18 2016 Maxim Orlov <murmansksity@gmail.com> - 0.9.212-1
 - Update to 0.9.212
 
